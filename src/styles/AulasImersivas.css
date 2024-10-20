@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: #ECEEE6;
+}
+
+.conteudo {
+    width: 700px;
+    height: 760px;
+    border-radius: 15px;
+    background: linear-gradient(103deg, #FFF 2.26%, #F9FCF3 99.32%);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.conteudoAtual {
+    width: 350px;
+    height: 364px;
+    border-radius: 15px;
+    background: linear-gradient(103deg, #FFF 2.26%, #F9FCF3 99.32%);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laterais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.blocos {
+    display: flex;
+    align-items: center;
+}
+
+.games h2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.game {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+ul, li{
+    align-items: center;
+    width: 100%;
+}

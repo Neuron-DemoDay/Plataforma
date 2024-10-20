@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --Title-fontWeight: 700;
+    --p-fontWeight: 600;
+    --h3-fontWeight: 400;
+    --Title-fontSize: 2rem;
+    --fontSize--p: 2.5rem;
+    --fontSize--h3: 0.500rem;
+
+    --color-one: #FE5F55;
+    --color-two: #9448BC;
+    --color-three: #B8D8D8;
+    --color-four: #EEF5DB;
+    --color-five:
+}
+
+.father{
+    font-family: Chakra Petch, sans-serif;
+    width: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    background: #EEF5DB;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 315px;
+}
+
+.position {
+    margin-left: 0;
+    margin-right: 315px;
+    flex-direction: row-reverse;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: var(--color-one);
+    font-size: var(--Title-fontSize);
+    margin-bottom: 50px;
+}
+
+.verticaLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 400px;
+    background-color: var(--color-two);
+    margin: 0 auto;
+    border-radius: 5px;
+    
+}
+
+.circle {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 30px solid var(--color-two);
+    border-radius: 50%;
+    background: transparent;
+    margin: 5px;
+}
+
+.elementQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.elementQuestion p {
+    font-size: var(--fontSize--p);
+    font-weight: var(--p-fontWeight);
+    color: var(--color-three);
+    background: none;
+}
+
+.horizontaLine {
+    display: flex;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-right {
+    padding-right: 47px;
+}
+
+.space-left {
+    padding-left: 47px;
+}
+
+.response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: var(--fontSize--h3);
+    font-weight: var(--h3-fontWeight);
+    color: var(--color-two);
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 160px;
+}
+
+.input input {
+    border: 5px ridge var(--color-three);
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+}
+
+.button button {
+    border: none;
+    padding: 5px 5px;
+    border: 4px ridge var(--color-one);
+    background-color: var(--color-one);
+    border-radius: 5px;
+    color: var(--color-four);
+    font-size: xx-small;
+    font-weight: var(--p-fontWeight);
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+

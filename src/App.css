@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBar {
+    position: fixed;
+    z-index: 10;
+}
+
+.user {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.routes {
+    display: flow-root;
+}
