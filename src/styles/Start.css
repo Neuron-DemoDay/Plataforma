@@ -1,0 +1,11 @@
+.start{
+    font-family: Chakra Petch, sans-serif;
+    width: 950px;
+    height: 650px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    background: #EEF5DB;
+    user-select: none;
+}

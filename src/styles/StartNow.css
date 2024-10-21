@@ -1,0 +1,9 @@
+.title {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-one);
+    font-size: var(--Title-fontSize);
+    width: 100%;
+    height: 100%;
+}

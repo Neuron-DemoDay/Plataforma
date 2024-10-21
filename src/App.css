@@ -1,24 +1,48 @@
-body {
+body,
+html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* Navbar com altura automática e o resto flexível */
+    grid-template-columns: 200px 1fr;
+    /* Sidebar com largura fixa e o restante para o conteúdo */
+    height: 100vh;
+    /* Altura total da viewport */
+}
+
+.containerUser {
     display: flex;
-    flex-direction: column;
-}
-
-.sideBar {
-    position: fixed;
-    z-index: 10;
-}
-
-.user {
-    position: absolute;
+    grid-column: 1 / span 2;
+    /* Navbar ocupa as duas colunas (sidebar + conteúdo) no topo */
+    height: 50px;
     width: 100%;
-    z-index: 5;
+    /* Altura da navbar */
+    z-index: 1;
+    justify-content: flex-end;
+    
+}
+
+.user{
+    width: 90%;
+}
+
+.sidebar {
+    /* Sidebar fica na segunda linha, abaixo da navbar */
+    grid-column: 1;
+    /* Sidebar ocupa a primeira coluna */
+    background: green;
 }
 
 .routes {
-    display: flow-root;
+    grid-row: 2;
+    /* Fica abaixo da navbar */
+    grid-column: 2;
+    /* Ocupa a segunda coluna (espaço que sobra à direita da sidebar) */
+    padding-left: 0;
+    padding-top: 50px;
 }

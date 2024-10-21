@@ -13,7 +13,6 @@ function Dados(props) {
 
     function handleSubmit(event) {  //Manipulando o envio
         event.preventDefault(); //Mantem os dados na tela
-        setName("");
         { name === '' ? setErro(true) : setErro(false) }
         console.log(name)
     }
@@ -25,10 +24,10 @@ function Dados(props) {
                         <p>Elemento</p>
                     </div>
                 </div>
-                <div class={`${props.space} horizontaLine`}>
-                    <div class="response">
+                    <div class={`${props.space} response`}>
                         <div class="text">
-                            <h3>Escreva somente o nome do elemento. Por exemplo: "Alumínio"</h3>
+                            <h3>Escreva somente o nome do elemento.</h3>
+                            <h3>Por exemplo: "Alumínio"</h3>
                         </div>
                         <form class="input" onSubmit={handleSubmit}>
                             <input
@@ -47,9 +46,7 @@ function Dados(props) {
                             </div>
                         </form>
                     </div>
-                </div>
             </div >
-            <div className="verticaLine"></div>
         </div>
     )
 }

@@ -9,7 +9,7 @@ import '../../styles/User.css'
 function User() {
     return (
         <div className="barraUser">
-            {/* <img src={config.png} alt="" />
+            <img src={config.png} alt="" />
             <img src={notifications.png} alt="" />
             <div className="profile">
                 <img src={Jaja.png} alt="" />
@@ -17,9 +17,8 @@ function User() {
                     <p>Joilson da Silva</p>
                     <p>Major 26</p>
                 </div>
-                <img src={more.png} alt="" />
             </div>
-            <img src={mode.png} alt="" /> */}
+            <img src={mode.png} alt="" />
         </div>
     )
 }

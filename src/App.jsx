@@ -12,10 +12,12 @@ import Start from './containers/Aulas/Games/Quimica/TabelaPeriodica/Start'
 function App() {
   return (
     <BrowserRouter>
-      <div className="user">
-        <User />
-      </div>
       <div className="content">
+        <div className="containerUser">
+        <div className="user">
+          <User />
+        </div>
+        </div>
         <div className="sideBar">
           <SideBar />
         </div>
@@ -25,7 +27,7 @@ function App() {
             <Route path='/Cronograma' Component={Cronograma} />
             <Route path='/Aulas' Component={AulasImersivas} />
             <Route path='/Intercambios' Component={Intercambio} />
-            <Route path='/Aulas/Games/Quimica' Component={Start}/>
+            <Route path='/Aulas/Games/Quimica' Component={Start} />
           </Routes>
         </div>
       </div>

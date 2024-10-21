@@ -18,48 +18,34 @@
 }
 
 .father{
-    font-family: Chakra Petch, sans-serif;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 950px;
+    height: 650px;
     scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-    box-sizing: border-box;
-    background: #EEF5DB;
-    user-select: none;
 }
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 315px;
+    justify-content: space-between;
+    width: 60%;
 }
 
 .position {
     margin-left: 0;
-    margin-right: 315px;
+    margin-right: 280px;
     flex-direction: row-reverse;
 }
 
-
-.title {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    color: var(--color-one);
-    font-size: var(--Title-fontSize);
-    margin-bottom: 50px;
-}
-
 .verticaLine {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 20px;
-    height: 400px;
+    height: 250px;
     background-color: var(--color-two);
-    margin: 0 auto;
     border-radius: 5px;
-    
+    margin-top: 10px;
 }
 
 .circle {
@@ -69,7 +55,8 @@
     border: 30px solid var(--color-two);
     border-radius: 50%;
     background: transparent;
-    margin: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .elementQuestion {
@@ -88,14 +75,6 @@
     background: none;
 }
 
-.horizontaLine {
-    display: flex;
-    height: 40px;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-}
-
 .space-right {
     padding-right: 47px;
 }
@@ -108,6 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
 }
 
 .text {
@@ -115,6 +95,13 @@
     font-weight: var(--h3-fontWeight);
     color: var(--color-two);
     margin-bottom: 10px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input {
@@ -134,7 +121,6 @@
 }
 
 .button button {
-    border: none;
     padding: 5px 5px;
     border: 4px ridge var(--color-one);
     background-color: var(--color-one);
@@ -143,6 +129,13 @@
     font-size: xx-small;
     font-weight: var(--p-fontWeight);
     cursor: pointer;
+}
+
+button:disabled{
+    color: var(--color-four);
+    background-color: #fe60559f;
+    border-color: #fe6055d3;
+    cursor:no-drop;
 }
 
 @media (prefers-color-scheme: light) {
