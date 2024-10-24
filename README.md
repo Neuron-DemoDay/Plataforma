@@ -1,8 +1,12 @@
-# React + Vite
+# Plataforma Neuron
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instalar os seguntes packs
 
-Currently, two official plugins are available:
+`npm i react-icons`
+`npm i axios`
+`npm i react-router-dom`
+`npm i gsap`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para utilizar os jogos ou se for necessário a API para rodar [Clique Aqui](https://github.com/jenifercmarques/TalkingWithGemini_API) para ir no repositório e clonar a pasta.
+Quando instalada, sempre ativar a API em um *novo* terminal, utilizando o 
+`node serves.js`
