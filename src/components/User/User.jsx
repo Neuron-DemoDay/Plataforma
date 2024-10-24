@@ -1,24 +1,36 @@
-import config from '../../assets/config.png'
-import notifications from '../../assets/notifications.png'
-import Jaja from '../../assets/Jaja.png'
-import more from '../../assets/more.png'
-import mode from '../../assets/mode.png'
 import '../../styles/User.css'
+import { MdNightlightRound } from "react-icons/md";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { IoIosSettings } from "react-icons/io";
+import { MdExpandMore } from "react-icons/md";
+
+
 
 
 function User() {
     return (
         <div className="barraUser">
-            <img src={config.png} alt="" />
-            <img src={notifications.png} alt="" />
-            <div className="profile">
-                <img src={Jaja.png} alt="" />
+            <div className="user-func">
+                <div className="icons">
+                    <IoIosSettings />
+                </div>
+                <div className="icons">
+                    <IoMdNotificationsOutline />
+                </div>
                 <div className="info">
-                    <p>Joilson da Silva</p>
-                    <p>Major 26</p>
+                    <div className="img-user"><img src="" alt="" /></div>
+                    <div className="infos-user">
+                        <span id='nome'>Joilson Costa</span>
+                        <span id='level'>Major 26</span>
+                    </div>
+                    <div className="more-user">
+                        <MdExpandMore />
+                    </div>
+                </div>
+                <div className="icons">
+                    <MdNightlightRound />
                 </div>
             </div>
-            <img src={mode.png} alt="" />
         </div>
     )
 }

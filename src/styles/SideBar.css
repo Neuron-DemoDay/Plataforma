@@ -1,12 +1,21 @@
 .side-bar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 25px 20px;
-    width: 90px;
-    height: 1000px;
+    flex: 1;
+    position: fixed;
+    width: 7%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     border-radius: 0px 50px 50px 0px;
     background: linear-gradient(176deg, #B40FE7 32.37%, #71118F 134.53%);
+    transition: width 0.5s  ease;
+}
+
+.side-bar:hover{
+    width: 13%;
 }
 
 .link-name{
@@ -18,7 +27,7 @@
 
 img{
     width: 50px;
-    margin: 20px 0 0 20px; /* topo, direita, baixo, esquerda. */
+    margin: 20px 0 0; /* topo, direita, baixo, esquerda. */
 }
 
 ul, li {
