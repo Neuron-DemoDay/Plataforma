@@ -1,5 +1,5 @@
 import axios from "axios";
-import { promptTabelaPeriodica } from "../containers/Aulas/Games/Quimica/TabelaPeriodica/PromptTabelaPeriodica";
+import { promptTabelaPeriodica } from '../containers/Aulas/Matérias/Quimica/Game/Tabela Periodica/PromptTabelaPeriodica'
 
 export const fetchTalkingGemini = async () =>{
     try{

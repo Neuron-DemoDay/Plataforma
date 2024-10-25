@@ -1,11 +1,11 @@
 
 import { useEffect, useState, useRef } from 'react';
-import { fetchTalkingGemini } from '../../../../../services/RequisiçãoAPI'
+import { fetchTalkingGemini } from '../../../../../../services/RequisiçãoAPI'
 import gsap from 'gsap';
-import { Acertou } from '../../../../../components/Feedback/Acertou'
-import { Errou } from '../../../../../components/Feedback/Errou'
-import { TelaFinal } from '../../../../../components/Feedback/TelaFinal'
-import StartNow from '../../../../../components/Start/StartNow';
+import { Acertou } from '../../../../../../components/Feedback/Acertou'
+import { Errou } from '../../../../../../components/Feedback/Errou'
+import { TelaFinal } from '../../../../../../components/Feedback/TelaFinal'
+import './Dados.css'
 
 function Dados() {
     const [symbols, setSymbols] = useState([])
@@ -89,7 +89,7 @@ const fetchSymbols = async () => {
   }
 
     return (
-        <div className='container'>
+      <div className="telaDados">
             {/* Exibe o timer no topo da tela */}
             <div className="timer">
                 <p>Tempo Restante: <strong>{timeLeft}s</strong></p>
@@ -124,7 +124,7 @@ const fetchSymbols = async () => {
             {/* Exibir o componente de feedback */}
             {feedback === 'acertou' && <Acertou onAnimationComplete={nextSymbol} />}
             {feedback === 'errou' && <Errou onAnimationComplete={nextSymbol} />}
-        </div>
+      </div>
     )
 }
 
