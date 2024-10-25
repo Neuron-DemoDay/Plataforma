@@ -13,7 +13,7 @@ export const Acertou = ({ onAnimationComplete }) => {
     }, [onAnimationComplete]);
   
     return (
-      <div ref={acertouRef}>
+      <div ref={acertouRef} className="feedback">
         <h2>Parabéns!</h2>
       </div>
     );

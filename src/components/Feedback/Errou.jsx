@@ -13,7 +13,7 @@ export const Errou = ({ onAnimationComplete }) => {
     }, [onAnimationComplete]);
   
     return (
-      <div ref={errouRef}>
+      <div ref={errouRef} className="feedback">
         <h2>Não foi dessa vez!</h2>
       </div>
     );

@@ -1,64 +1,67 @@
 /* Centralizar a tela final */
-:root{
-    --color-one: #FE5F55;
-    --color-two: #9448BC;
-    --color-three: #B8D8D8;
-    --color-four: #EEF5DB;
+:root {
+  --color-one: #FE5F55;
+  --color-two: #9448BC;
+  --color-three: #B8D8D8;
+  --color-four: #EEF5DB;
 }
 
-.tela-final-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    width: 850px;
-    height: 550px;
-    background-color: var(--color-four); /* Cor de fundo geral */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-family: 'Chakra Petch', sans-serif;
-  }
-  
-  .tela-final {
-    
-    width: 50%;
-    padding: 20px;
-    background-color: var(--color-four);
-    border: 2px groove var(--color-two);
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tela-final h1, .tela-final h2 {
-    margin-bottom: 20px;
-    color: var(--color-two);
-  }
-  
-  .tela-final p {
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--color-two);
-  }
-  .link-aulas{
-    text-decoration: none;
-  }
+.telaMaior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
-  .tela-final button {
-    padding: 10px 20px;
-    background-color: var(--color-two);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  .tela-final button:hover {
-    background-color: var(--color-two);
-  }
+.tela-final-container{
+  display: flex;
+  justify-content: center;
+}
 
-  .tela-final button:disabled{
-    background-color: #9348bccc;
-  }
-  
+.tela-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Chakra Petch', sans-serif;
+  width: 50%;
+  border: 2px groove var(--color-two);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tela-final h1,
+.tela-final h2 {
+  color: var(--color-two);
+}
+
+.tela-final p {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--color-two);
+}
+
+.link-aulas {
+  text-decoration: none;
+  color: #9448BC;
+}
+
+.reproved, .approved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonTelaFinal {
+border:3px solid #9448BC;
+width: 30%;
+border-radius: 10px;
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 10px;
+}

@@ -7,84 +7,51 @@
     --color-four: #EEF5DB;
 }
 
+.telaQuiz{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.quiz_box {
-    background: var(--color-three);
-    width: 550px;
-    border-radius: 10px;
-    padding: 30px;
-    opacity: 0;
-    pointer-events: none;
-    border: var(--color-one);
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-  .quiz_box h1 {
-    font-size: 25px;
-    color: var(--color-two);
-    font-weight: 600; /*diminui a espessura da letra*/
-    border-bottom: 1px solid #333; /*cria a "linha"*/
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  /* -~-~-~-~-~-Termina ESTILIZAÇÃO Box Quiz-~-~-~-~-~- */
-  /* -~-~-~-~-~-Perguntas-~-~-~-~-~- */
-  .quiz {
-    padding: 20px 0;
-  }
-  
-  .quiz h2 {
-    font-size: 18px;
-    color: var(--color-two);
-    font-weight: 600;
-  }
-  
-  #aproved {
-    font-size: 18px;
-    padding-top: 5px;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  .btn {
-    background: #fff;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn:hover:not([disabled]) {
-    background: var(--color-two);
-    color: #fff; /*cor da fonte*/
-  }
-  
-  .btn:disabled {
-    cursor: no-drop;
-  }
-  
-  #next-btn {
-    background: var(--color-two);
-    color: #fff;
-    font-weight: 500;
-    border: 0;
-    padding: 10px; /*aumentou a proporção do botão*/
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .correct {
-    background: #9aea9e;
-  }
-  
-  .incorrect {
-    background: #ff9393;
-  }
+.containerQuiz{
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.containerQuiz > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9448BC;
+  margin: 8px;
+}
+
+.quiz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 70%;
+}
+
+#quesion{
+  margin: 0;
+}
+
+#answer-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  height: 60%;
+}
+
+.nextQuiz{
+  height: 30px;   
+}
