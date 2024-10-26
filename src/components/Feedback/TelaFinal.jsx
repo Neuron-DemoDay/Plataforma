@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/TelaFinal.css'
 
-export const TelaFinal = ({ score, totalQuestions }) => {
+export const TelaFinal = ({ score, total, disciplina }) => {
     const approved = score > 3;
 
     return (
@@ -10,7 +10,7 @@ export const TelaFinal = ({ score, totalQuestions }) => {
             <div className="tela-final-container">
                 <div className="tela-final">
                     <h1>Resultado Final</h1>
-                    <p>Pontuação: {score} de {totalQuestions}</p>
+                    <p>Pontuação: {score} de {total}</p>
 
                     {approved ? (
                         <div className='approved'>
@@ -23,7 +23,7 @@ export const TelaFinal = ({ score, totalQuestions }) => {
                         <div className='reproved'>
                             <h2>Não foi dessa vez, estude um pouco mais para tentarmos novamente!</h2>
                             <div className="buttonTelaFinal">
-                                    <Link to="/aulas" className='link-aulas'>Quimica</Link>
+                                    <Link to="/aulas" className='link-aulas'>{disciplina}</Link>
                             </div>
                         </div>
                     )}

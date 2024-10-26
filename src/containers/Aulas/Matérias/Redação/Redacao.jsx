@@ -144,7 +144,7 @@ function Redacao(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={"/Aulas/Games/Quiz/"}
+                            link={'/Aulas/Redacao/Game/QuizRedacao'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

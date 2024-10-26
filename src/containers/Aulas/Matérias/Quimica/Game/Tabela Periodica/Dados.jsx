@@ -6,6 +6,7 @@ import { Acertou } from '../../../../../../components/Feedback/Acertou'
 import { Errou } from '../../../../../../components/Feedback/Errou'
 import { TelaFinal } from '../../../../../../components/Feedback/TelaFinal'
 import './Dados.css'
+import { promptGames } from '../../../../../../services/PromptGames';
 
 function Dados() {
     const [symbols, setSymbols] = useState([])
@@ -16,15 +17,24 @@ function Dados() {
     const [gameFinished, setGameFinished] = useState(false)
     const [timeLeft, setTimeLeft] = useState(10)
     const symbolRef = useRef(null)
+    const estrutura = `"correspondence": [
+        {
+            "element": "element",
+            "answer": {
+                "name": "name"
+            }
+        }
+    ]`
 
     // Fazendo a requisição para a API
 // Função para buscar os elementos da API
 const fetchSymbols = async () => {
     try {
-      const result = await fetchTalkingGemini();
+      const prompt = promptGames('5', 'elementos da tabela períodica e seus respectivos nomes', estrutura)
+      const result = await fetchTalkingGemini(prompt);
       setSymbols(result);
     } catch (error) {
-      console.error('Erro ao buscar os elementos');
+      console.error('Erro ao buscar os elementos')
     }
   };
 
@@ -99,7 +109,7 @@ const fetchSymbols = async () => {
             {!feedback && symbols.length > 0 ? (
                 <div className="element-input-container">
                     <div ref={symbolRef} className='symbol'>
-                        <p className='element-symbol'>{symbols[currentIndex].symbol}</p>
+                        <p className='element-symbol'>{symbols[currentIndex].element}</p>
                     </div>
                     <div className="input-section">
                         {/* Adição do parágrafo explicativo */}

@@ -89,7 +89,7 @@ input {
   border: 5px solid #9448BC;
 }
 
-button {
+.input-section > form > button {
   background-color: var(--color-two);
   border-color: var(--color-two);
   border-style: groove;
@@ -107,7 +107,7 @@ button {
 }
 
 
-button:disabled {
+.input-section > form > button:disabled {
   color: var(--color-four);
   background-color: #9348bccd;
   border-color: #9348bcd9;

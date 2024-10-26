@@ -10,7 +10,6 @@ import { TbTextGrammar } from "react-icons/tb";
 import { RiEnglishInput } from "react-icons/ri";
 import { FaRegPenToSquare } from "react-icons/fa6";
 import Disciplina from '../../components/Buttons/ButtonDisciplina/Disciplina';
-import Biologia from './Matérias/Biologia/Biologia';
 
 
 function Aulas() {

@@ -144,7 +144,7 @@ function Geografia(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={"/Aulas/Games/Quiz/"}
+                            link={'/Aulas/Geografia/Game/QuizGeografia'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

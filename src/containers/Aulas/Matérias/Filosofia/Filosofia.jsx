@@ -144,7 +144,7 @@ function Filosofia(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={"/Aulas/Games/Quiz/"}
+                            link={'/Aulas/Filosofia/Game/QuizFilosofia'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

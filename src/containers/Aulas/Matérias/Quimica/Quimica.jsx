@@ -143,7 +143,7 @@ return(
                         <ul>
                             <li>
                             <JogosDesc 
-                                link={'/Aulas/Games/Quiz/Quiz'}
+                                link={'/Aulas/Quimica/Game/QuizQuimica'}
                                 name={"Quiz"}
                                 styleGame={'#FE5F55'}
                                 />

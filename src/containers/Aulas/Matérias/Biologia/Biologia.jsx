@@ -145,7 +145,7 @@ function Biologia() {
                         <ul>
                             <li>
                             <JogosDesc 
-                                link={"/Aulas/Games/Quiz/Quiz"}
+                                link={'./containers/Aulas/Matérias/Biologia/Games/QuizBiologia'}
                                 name={"Quiz"}
                                 styleGame={'#FE5F55'}
                                 />

@@ -1,15 +1,12 @@
 import axios from "axios";
-import { promptTabelaPeriodica } from '../containers/Aulas/Matérias/Quimica/Game/Tabela Periodica/PromptTabelaPeriodica'
 
-export const fetchTalkingGemini = async () =>{
+export const fetchTalkingGemini = async (prompt) =>{
     try{
         const response = await axios.post('http://localhost:3000/TalkingWithGemini', {
-            prompt: promptTabelaPeriodica
+            prompt: prompt
             
         })
-
         return response.data.correspondence
-       
     }
     catch (error) {
         console.error("Erro ao buscar os elementos da API", error)
