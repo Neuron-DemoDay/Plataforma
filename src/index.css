@@ -1,4 +1,9 @@
+/* Fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 html, body, #root {
@@ -36,3 +41,47 @@ html, body, #root {
 .side-Bar:hover + .content{
     margin-left: 15%;
 }
+
+/* STYLE GLOBAL  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--room-color);
+    min-height: 100vh;
+  }
+  
+  :root{
+     
+    /* Cores */
+    --primary-color: #FE5F55;  /* Coral vibrante */
+    --secondary-color: #0F6DE7;  /* Azul energetico */
+    --third-color: #2A1E4E;  /* Roxo profundo */
+    --room-color: #EEF5DB;  /* Verde suave pastel */
+    --fifth-color: #B40FE7;  /* Roxo ousado */
+    --sixth-color: #7EC8DE;  /* Azul claro suave */
+  
+    /* Fonts */
+    --primary-font: "Inter", sans-serif; /* inter para titulos */
+    --secondary-font: "Poppins", serif;   /* poppins para conteudo do site e plataforma */
+    --third-font:"Jost", sans-serif; /* jost para nav bar e footer */
+  
+    
+    color-scheme: light dark;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+  
+    :root {
+      --primary-color: #FE5F55;  /* Um tom vermelho coral para chamar atencao */
+      --secondary-color: #0F6DE7;  /* Azul vivido */
+      --third-color: #1B1033;  /* Azul escuro com leve tom roxo */
+      --room-color: #252C34;  /* Cinza neutro escuro */
+      --fifth-color: #8A0FB5;  /* Roxo profundo */
+      --sixth-color: #4F92A5;  /* Azul acinzentado */
+    }
+  }
