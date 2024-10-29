@@ -11,7 +11,7 @@ function DadosQuiz({ tema, materia }) {
     const [selectAnswer, setSelectedAnswer] = useState(0)
     const [isAnswerSelected, setIsAnswerSelected] = useState(false);
     const [score, setScore] = useState(null)
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [isQuizComplete, setIsQuizComplete] = useState(false)
     const estrutura = `"correspondence": [
 {
@@ -29,7 +29,7 @@ function DadosQuiz({ tema, materia }) {
             const prompt = promptGames('5 questões e 4 alternativas', tema, estrutura)
             const result = await fetchTalkingGemini(prompt)
             setQuestions(result)
-            setIsLoading(true)
+            setIsLoading(false)
         } catch (error) {
             console.log('Erro ao gerar perguntas')
         } finally {
@@ -42,14 +42,14 @@ function DadosQuiz({ tema, materia }) {
     }, [])
 
     const handleAnswerSelect = (isCorrect, index) => {
-        if (selectAnswer) return;
-        setSelectedAnswer(true);
+        if (selectAnswer) return
+        setSelectedAnswer(true)
 
         setSelectedAnswer(index)
         setIsAnswerSelected(true)
 
         if (isCorrect) {
-            setScore(score + 1);
+            setScore(score + 1)
         }
 
         setTimeout(() => {
@@ -74,7 +74,7 @@ function DadosQuiz({ tema, materia }) {
 
     return (
         <div className="telaQuiz">
-            {isLoading ? (
+        {isLoading ? (
                 <h1>Gerando Perguntas...</h1>)
                 : (
                     <div className="containerQuiz">

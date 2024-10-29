@@ -152,7 +152,7 @@ function Biologia() {
                             </li>
                             <li>
                             <JogosDesc 
-                                link={"/Aulas/Games/Quimica/"}
+                                link={'/Aulas/Biologia/Games/PalavrasBiologia'}
                                 name={"Ciclos Biológicos"}
                                 styleGame={'#FE5F55'}
                                 />

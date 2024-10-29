@@ -4,10 +4,10 @@ import Tema from  '../../../../components/Buttons/ButtonTemas/Temas'
 import JogosDesc from '../../../../components/Buttons/ButtonJogos/JogosDesc'
 
 
-function Fisica(){
+function Filosofia(){
     return(
         <div className="aulas">
-        <h2>Fisica</h2>
+        <h2>Filosofia</h2>
         <div className="blocos">
             <div className="conteudo">
                 <span>Lista de conteúdos</span>
@@ -144,7 +144,7 @@ function Fisica(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={'/Aulas/Fisica/Game/QuizFisica'}
+                            link={'/Aulas/Filosofia/Games/QuizFilosofia'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />
@@ -171,4 +171,4 @@ function Fisica(){
     )
 }
 
-export default Fisica
+export default Filosofia

@@ -4,10 +4,10 @@ import Tema from  '../../../../components/Buttons/ButtonTemas/Temas'
 import JogosDesc from '../../../../components/Buttons/ButtonJogos/JogosDesc'
 
 
-function Portugues(){
+function Matematica(){
     return(
         <div className="aulas">
-        <h2>Português</h2>
+        <h2>Matemática</h2>
         <div className="blocos">
             <div className="conteudo">
                 <span>Lista de conteúdos</span>
@@ -144,15 +144,15 @@ function Portugues(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={'/Aulas/Português/Game/QuizPortugues'}
+                            link={'/Aulas/Matematica/Games/QuizMatematica'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />
                         </li>
                         <li>
                         <JogosDesc 
-                            link={""}
-                            name={"?"}
+                            link={'/Aulas/Matematica/Games/Puzzle'}
+                            name={"Puzzle"}
                             styleGame={'#FE5F55'}
                             />
                         </li>
@@ -171,4 +171,4 @@ function Portugues(){
     )
 }
 
-export default Portugues
+export default Matematica

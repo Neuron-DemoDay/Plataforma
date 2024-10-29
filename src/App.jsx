@@ -1,31 +1,32 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Dashboard from './containers/Dashboard/Dashboard'
 import Cronograma from './containers/Cronograma/Cronograma'
-import Biologia from './containers/Aulas/Matérias/Biologia/Biologia'
-import Intercambio from './containers/Intercâmbio/Intercambio'
+import Biologia from './containers/Aulas/Materias/Biologia/Biologia'
 import SideBar from './components/SideBar/SideBar'
 import User from './components/User/User'
 import Aulas from './containers/Aulas/Aulas'
-import Quimica from './containers/Aulas/Matérias/Quimica/Quimica'
-import Fisica from './containers/Aulas/Matérias/Física/Fisica'
-import Matematica from './containers/Aulas/Matérias/Matemática/Matematica'
-import Historia from './containers/Aulas/Matérias/História/Historia'
-import Geografia from './containers/Aulas/Matérias/Geografia/Geografia'
-import Filosofia from './containers/Aulas/Matérias/Filosofia/Filosofia'
-import Portugues from './containers/Aulas/Matérias/Português/Portugues'
-import Ingles from './containers/Aulas/Matérias/Inglês/Ingles'
-import Redacao from './containers/Aulas/Matérias/Redação/Redacao'
-import Dados from './containers/Aulas/Matérias/Quimica/Game/Tabela Periodica/Dados'
-import QuizQuimica from './containers/Aulas/Matérias/Quimica/Game/QuizQuimica/QuimicaQuiz'
-import QuizPortugues from './containers/Aulas/Matérias/Português/Games/PortuguêsQuiz/QuizPortugues'
-import QuizMatematica from './containers/Aulas/Matérias/Matemática/Games/QuizMatematica'
-import QuizIngles from './containers/Aulas/Matérias/Inglês/Games/QuizIngles'
-import QuizHistoria from './containers/Aulas/Matérias/História/Games/QuizHistoria'
-import QuizGeografia from './containers/Aulas/Matérias/Geografia/Games/QuizGeografia'
-import QuizFisica from './containers/Aulas/Matérias/Física/Games/QuizFisica'
-import QuizFilosofia from './containers/Aulas/Matérias/Filosofia/Games/QuizFilosofia'
-import QuizBiologia from './containers/Aulas/Matérias/Biologia/Games/QuizBiologia'
-import QuizRedacao from './containers/Aulas/Matérias/Redação/Games/QuizRedação'
+import Quimica from './containers/Aulas/Materias/Quimica/Quimica'
+import Fisica from './containers/Aulas/Materias/Fisica/Fisica'
+import Matematica from './containers/Aulas/Materias/Matematica/Matematica'
+import Historia from './containers/Aulas/Materias/Historia/Historia'
+import Geografia from './containers/Aulas/Materias/Geografia/Geografia'
+import Filosofia from './containers/Aulas/Materias/Filosofia/Filosofia'
+import Portugues from './containers/Aulas/Materias/Portugues/Portugues'
+import Ingles from './containers/Aulas/Materias/Ingles/Ingles'
+import Redacao from './containers/Aulas/Materias/Redacao/Redacao'
+import Dados from './containers/Aulas/Materias/Quimica/Game/Tabela Periodica/Dados'
+import QuizQuimica from './containers/Aulas/Materias/Quimica/Game/QuizQuimica/QuimicaQuiz'
+import QuizPortugues from './containers/Aulas/Materias/Portugues/Games/PortuguesQuiz/QuizPortugues'
+import QuizMatematica from './containers/Aulas/Materias/Matematica/Games/QuizMatematica'
+import QuizIngles from './containers/Aulas/Materias/Ingles/Games/QuizIngles'
+import QuizHistoria from './containers/Aulas/Materias/Historia/Games/QuizHistoria'
+import QuizGeografia from './containers/Aulas/Materias/Geografia/Games/QuizGeografia'
+import QuizFisica from './containers/Aulas/Materias/Fisica/Games/QuizFisica'
+import QuizFilosofia from './containers/Aulas/Materias/Filosofia/Games/QuizFilosofia'
+import QuizBiologia from './containers/Aulas/Materias/Biologia/Games/QuizBiologia'
+import QuizRedacao from './containers/Aulas/Materias/Redacao/Games/QuizRedação'
+import Puzzle from './containers/Aulas/Materias/Matematica/Games/PuzzleMatematica'
+import JogoDePalavras from './containers/Aulas/Materias/Biologia/Games/PalavrasBiologia'
 
 
 function App() {
@@ -47,31 +48,32 @@ function App() {
             <Route exact path='/' Component={Dashboard} />
             <Route path='/Cronograma' Component={Cronograma} />
             <Route path='/Aulas' Component={Aulas} />
-            <Route path='/Intercambios' Component={Intercambio} />
             {/* Materias */}
             <Route path='/Aulas/Materias/Quimica' Component={Quimica}/>
             <Route path='/Aulas/Materias/Biologia' Component={Biologia}/>
-            <Route path='/Aulas/Matérias/Fisica' Component={Fisica}/>
-            <Route path='/Aulas/Matérias/Matematica' Component={Matematica}/>
-            <Route path='/Aulas/Matérias/Historia' Component={Historia}/>
-            <Route path='/Aulas/Matérias/Geografia' Component={Geografia}/>
-            <Route path='/Aulas/Matérias/Filosofia' Component={Filosofia}/>
-            <Route path='/Aulas/Matérias/Portugues' Component={Portugues}/>
-            <Route path='/Aulas/Matérias/Ingles' Component={Ingles}/>
-            <Route path='/Aulas/Matérias/Redacao' Component={Redacao}/>
+            <Route path='/Aulas/Materias/Fisica' Component={Fisica}/>
+            <Route path='/Aulas/Materias/Matematica' Component={Matematica}/>
+            <Route path='/Aulas/Materias/Historia' Component={Historia}/>
+            <Route path='/Aulas/Materias/Geografia' Component={Geografia}/>
+            <Route path='/Aulas/Materias/Filosofia' Component={Filosofia}/>
+            <Route path='/Aulas/Materias/Portugues' Component={Portugues}/>
+            <Route path='/Aulas/Materias/Ingles' Component={Ingles}/>
+            <Route path='/Aulas/Materias/Redacao' Component={Redacao}/>
             {/* Quiz */}
             <Route path='/Aulas/Quimica/Game/QuizQuimica' Component={QuizQuimica}/>
-            <Route path='/Aulas/Português/Games/QuizPortugues' Component={QuizPortugues}/>
+            <Route path='/Aulas/Portugues/Games/QuizPortugues' Component={QuizPortugues}/>
             <Route path='/Aulas/Matematica/Games/QuizMatematica' Component={QuizMatematica}/>
             <Route path='/Aulas/Ingles/Games/QuizIngles' Component={QuizIngles}/>
             <Route path='/Aulas/Historia/Games/QuizHistoria' Component={QuizHistoria}/>
             <Route path='/Aulas/Geografia/Games/QuizGeografia' Component={QuizGeografia}/>
             <Route path='/Aulas/Fisica/Games/QuizFisica' Component={QuizFisica}/>
             <Route path='/Aulas/Filosofia/Games/QuizFilosofia' Component={QuizFilosofia}/>
-            <Route path='/Aulas/Matérias/Biologia/Games/QuizBiologia' Component={<QuizBiologia/>}/>
+            <Route path='/Aulas/Materias/Biologia/Games/QuizBiologia' Component={<QuizBiologia/>}/>
             <Route path='/Aulas/Redacao/Games/QuizRedacao' Component={QuizRedacao}/>
             {/* OutrosJogos */}
             <Route path='/Aulas/Quimica/Game/Dados' Component={Dados}/>
+            <Route path='/Aulas/Matematica/Games/Puzzle' Component={Puzzle}/>
+            <Route path='/Aulas/Biologia/Games/PalavrasBiologia' Component={JogoDePalavras}/>
 
           </Routes>
         </div>

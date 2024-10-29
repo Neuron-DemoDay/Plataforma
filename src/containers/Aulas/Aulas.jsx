@@ -34,14 +34,14 @@ function Aulas() {
                     />
                     <Disciplina
                         classe={"fisica"}
-                        link={'/Aulas/Matérias/Fisica'}
+                        link={'/Aulas/Materias/Fisica'}
                         styleIcon={'#2EE6CA'}
                         icon={<GiAtom />}
                         disciplina={'Fisica'}
                     />
                     <Disciplina
                         classe={"matematica"}
-                        link={'/Aulas/Matérias/Matematica'}
+                        link={'/Aulas/Materias/Matematica'}
                         styleComp={'#FE5F55'}
                         icon={<TbMathSymbols />}
                         disciplina={'Matematica'}
@@ -53,21 +53,21 @@ function Aulas() {
                 <div className="materias">
                     <Disciplina
                         classe={"historia"}
-                        link={'/Aulas/Matérias/Historia'}
+                        link={'/Aulas/Materias/Historia'}
                         styleComp={'#B40FE7'}
                         icon={<BsHourglassSplit />}
                         disciplina={'Historia'}
                     />
                     <Disciplina
                         classe={"geografia"}
-                        link={'/Aulas/Matérias/Geografia'}
+                        link={'/Aulas/Materias/Geografia'}
                         styleComp={'#33BFFF'}
                         icon={<BsGlobeAmericas />}
                         disciplina={'Geografia'}
                     />
                     <Disciplina
                         classe={"filosofia"}
-                        link={'/Aulas/Matérias/Filosofia'}
+                        link={'/Aulas/Materias/Filosofia'}
                         styleComp={'#FFCB33'}
                         icon={<TfiThought />}
                         disciplina={'Filosofia'}
@@ -79,21 +79,21 @@ function Aulas() {
                 <div className="materias">
                     <Disciplina
                         classe={"portugues"}
-                        link={'/Aulas/Matérias/Portugues'}
+                        link={'/Aulas/Materias/Portugues'}
                         styleComp={'#CC7429'}
                         icon={<TbTextGrammar />}
                         disciplina={'Portugues'}
                     />
                     <Disciplina
                         classe={"ingles"}
-                        link={'/Aulas/Matérias/Ingles'}
+                        link={'/Aulas/Materias/Ingles'}
                         styleComp={'#0F6DE7'}
                         icon={<RiEnglishInput />}
                         disciplina={'Ingles'}
                     />
                     <Disciplina
                         classe={"redacao"}
-                        link={'/Aulas/Matérias/Redacao'}
+                        link={'/Aulas/Materias/Redacao'}
                         styleComp={'#FF00D0'}
                         icon={<FaRegPenToSquare />}
                         disciplina={'Redação'}
