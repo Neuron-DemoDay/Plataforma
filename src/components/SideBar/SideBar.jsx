@@ -1,40 +1,54 @@
-import { Link } from "react-router-dom"
 import logoBranca from '../../assets/logoBranca.png'
-import { GoHomeFill } from "react-icons/go";
 import '../../styles/SideBar.css'
-import { MdOutlineCalendarViewMonth } from "react-icons/md";
-import { BsJournalBookmarkFill } from "react-icons/bs";
-import { BiWorld } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
+import { GoHomeFill } from "react-icons/go";
+import { MdViewTimeline } from "react-icons/md";
+import { PiPaperPlaneTiltFill } from "react-icons/pi";
+import { FaVideo } from "react-icons/fa";
 
-
+import { Outlet } from "react-router-dom";
+import User from "../User/User";
 
 
 function SideBar(){
     return(
-        <div className="side-bar">
-        <aside>
-            <img src={logoBranca} alt="" />
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/" className="link-name"><GoHomeFill style={{fontSize:'5vh'}}/></Link>
-                </li>
-                <li>
-                    <Link to="/Cronograma" className="link-name"><MdOutlineCalendarViewMonth style={{fontSize:'5vh'}}/>
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/Aulas" className="link-name"><BsJournalBookmarkFill style={{fontSize:'5vh'}}/>
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/Intercambios" className="link-name"><BiWorld style={{fontSize:'5vh'}}/>
-                    </Link>
-                </li>
-            </ul>
+        <>
+        <User/>
+        <nav className="navbar">
+          <div className="navbar-identidade">
+            <img src={logoBranca} alt="Logo" aria-label="Logo da Neuron" />
+            <span className='navbar-nome'>Neuron</span>
+          </div>
+          <ul className="navbar-links">
+            <li>
+              <NavLink to="/">
+              
+              <i><GoHomeFill className="icon" /> </i><span>Home</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/cronograma">
+              <i><MdViewTimeline className="icon" /></i><span>Cronograma</span> 
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/aulas">
+              <i><FaVideo className="icon" /></i> <span>Aulas</span> 
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/intercambios">
+              <i><PiPaperPlaneTiltFill className="icon" /></i> <span>Intercâmbios</span> 
+              </NavLink>
+            </li>
+
+          </ul>
         </nav>
-        </aside>
-        </div>
+    
+        <div className="conte">
+            <Outlet />
+          </div>
+        </>
     )
 }
 
