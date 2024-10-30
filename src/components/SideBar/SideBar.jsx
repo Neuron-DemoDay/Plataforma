@@ -6,6 +6,7 @@ import { MdViewTimeline } from "react-icons/md";
 import { PiPaperPlaneTiltFill } from "react-icons/pi";
 import { FaVideo } from "react-icons/fa";
 import User from "../User/User";
+import { Outlet } from "react-router-dom";
 
 
 function SideBar() {
@@ -25,17 +26,17 @@ function SideBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Cronograma">
+            <NavLink to="/cronograma">
               <i><MdViewTimeline className="icon" /></i><span>Cronograma</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="./Aulas">
+            <NavLink to="/aulas">
               <i><FaVideo className="icon" /></i> <span>Aulas</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Intercambios">
+            <NavLink to="/intercambios">
               <i><PiPaperPlaneTiltFill className="icon" /></i> <span>Intercâmbios</span>
             </NavLink>
           </li>
@@ -45,6 +46,9 @@ function SideBar() {
 
         </ul>
       </nav>
+      <div className="conte">
+        <Outlet />
+      </div>
     </>
   )
 }

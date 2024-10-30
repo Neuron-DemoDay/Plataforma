@@ -28,11 +28,13 @@
 
 /* STYLE GLOBAL  */
 
+
 html, body, #root {
   margin: 0;
   padding: 0;
   background-color: var(--room-color);
   min-height: 100vh;
+  color: var(--third-color);
 }
 
 
@@ -52,17 +54,19 @@ html, body, #root {
 .main-Content{
   display: flex;
   flex: 1;
+  background-color: #7EC8DE;
 }
 
-.content /*content*/{
+.conte /*content*/{
   flex: 1;
   padding: 20px;
   margin-left: 10%;
+  padding-top: 60px;
   transition: margin-left 0.3s ease;
 }
 
-.side-Bar:hover + .content{
-  margin-left: 15%;
+.side-Bar:hover + .conte{
+  margin-left: 25%;
 }
 
 
