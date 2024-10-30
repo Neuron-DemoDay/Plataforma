@@ -1,86 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.conte{
-    padding-left: 140px;
-    padding-top: 3.5rem;
-    transition: padding-left 0.3s ease;
-}
- 
-.navbar:hover ~ .conte {
-    padding-left: 250px;
-}
-
-/* Navbar principal */
 .navbar {
-    width: 122px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 10%;
+    position: fixed;
+    margin: 0;
     height: 100vh;
     border-radius: 0px 50px 50px 0px;
     background: linear-gradient(176deg, #B40FE7 32.37%, #71118F 134.53%);
-    transition: width 0.3s ease-in-out;
-    position: fixed;
-    top: 0;
-    left: 0;
+    transition: width 0.5s ease;
     z-index: 1000;
+    font-family: "Open Sans", sans-serif;
 }
 
-/* Expande a navbar em telas maiores */
-.navbar:hover {
-    width: 15%;
-}
 
-/* Identidade da navbar com ícones e título */
-.navbar-identidade {
-    display: flex;
-    flex-direction: row;
-    padding-top: 3vh;
-    padding-left: 2vh;
-    align-items: center;
-}
-
-.navbar-identidade span {
-    display: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.navbar:hover .navbar-identidade span {
-    display: inline-block;
-}
-
-/* Links da navbar em formato de coluna */
 .navbar-links {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding-left: 47px;
-    padding-top: 60px;
+    gap: 6vh;
 }
 
-/* Estilo geral dos links da navbar */
+.navbar-identidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-identidade>img {
+    width: 60px;
+    margin: 20px 0 0;
+    /* topo, direita, baixo, esquerda. */
+}
+
+.navbar-identidade .navbar-nome{
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
 .navbar-links a {
     transform: translateX(-9px);
     color: #FFF;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 3vh;
     gap: 8px;
+    text-decoration: none;
 }
 
-/* Estilo do link ativo */
+.icon {
+    font-size: 35px;
+}
+
+.icon>ul,
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 3px;
+    list-style: none;
+    text-decoration: none;
+    row-gap: 20px;
+    align-items: flex-start;
+}
+
+.navbar-links span {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar:hover .navbar-identidade span {
+    display: inline-block;
+} 
+
+.navbar:hover .navbar-identidade .navbar-nome {
+    display: inline-block;
+} 
+
+
+/* Animações */
+
+.navbar:hover {
+    width: 18%;
+}
+
 .navbar-links a.active {
     color: #794FF1;
-    font-size: 20px;
+    font-size: 15px;
     transform: translateX(-24px);
-    width: 61px;
-    height: 55px;
+    width: 70%;
+    height: 8vh;
     padding-left: 15px;
     border-radius: 20px;
     background: rgba(217, 217, 217, 0.90);
@@ -89,50 +108,27 @@
 
 .navbar-links a.active i {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
 }
 
-/* Expande o link ativo ao expandir a navbar */
 .navbar:hover .navbar-links a.active {
-    width: 177px;
-    height: 55px;
+    width: 100%;
+    height: 7.5vh;
 }
 
-/* Ícone de cada link */
-.icon {
-    font-size: 25px;
-}
-
-/* Oculta o texto dos links por padrão */
-.navbar-links span {
-    display: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Exibe o texto dos links ao expandir a navbar */
 .navbar:hover .navbar-links span {
     display: inline;
 }
 
-/* Adiciona forma decorativa ao lado esquerdo dos itens ativos */
 .navbar-links a.active::before {
     content: "";
-    position: absolute;
+    position: absolute; 
+    width: 50px;
     left: -40px;
     top: 0;
-    width: 40px;
-    height: 100%;
+    height: 45px;
     background-color: rgba(217, 217, 217, 0.90);
     clip-path: circle(50% at 30% 50%);
     transform: translateX(-5px);
-}
-
-/* Estilo geral para links e listas */
-.navbar-links a, ul {
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }

@@ -7,9 +7,10 @@
 }
 
 .aulas > h2 {
-    padding: 0;
+    padding: 10px;
     margin: 0;
     justify-content: center;
+    color: var(--room-color);
 }
 
 .blocos {
@@ -24,6 +25,7 @@
     /* Faz o scroll vertical aparecer */
     overflow-x: hidden;
     /* Oculta o scroll horizontal (opcional) */
+   
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
