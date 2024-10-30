@@ -7,17 +7,24 @@
     --color-four: #EEF5DB;
 }
 
+.telaQuiz{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
 
 .containerRegras {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #EEF5DB;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 90%;
 }
 
 .info-title {
@@ -25,27 +32,33 @@
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    padding-top: 10px;
+    padding: 20px;
     height: 60px;
-    width: 100%;
+    width: 80%;
     border-bottom: 1px solid lightgrey;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 2.5rem;
     color: #9448BC;
 }
 
-.info-list {
-    list-style: none;
-    font-weight: 400;
+.info-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.containerRegras .info-list {
-    padding: 15px 35px;
-}
-
-.containerRegras .info-list .info {
-    margin: 5px 0;
-    font-size: 12px;
+.infoQuiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500; 
 }
 
 .buttons-info {
@@ -53,7 +66,7 @@
 }
 
 .containerRegras .buttons-info {
-    height: 60px;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -73,7 +86,7 @@
     color: #fff;
 }
 
-.link-buttons{
+.link-buttons {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -81,22 +94,12 @@
     color: #fff;
 }
 
-.buttons-info button.quit {
+.link-buttons button.quit {
     color: #9448BC;
-    background-color: #fff;
+    
 }
 
-.buttons-info button.restart {
-    color: #fff;
-    background-color: #9448BC;
-}
-
-.buttons-info button.quit:hover {
-    color: #a347d4;
-    background-color: #fff;
-}
-
-.buttons-info button.restart:hover {
-    background-color: #9448BC;
-    color: #fff;
+.link-buttons button.quit:hover {
+    color: #9448BC;
+    background-color: transparent;
 }

@@ -1,11 +1,12 @@
 
 import { useEffect, useState, useRef } from 'react';
-import { fetchTalkingGemini } from '../../../../../services/RequisiçãoAPI'
+import { fetchTalkingGemini } from '../../../../../../services/RequisiçãoAPI'
 import gsap from 'gsap';
-import { Acertou } from '../../../../../components/Feedback/Acertou'
-import { Errou } from '../../../../../components/Feedback/Errou'
-import { TelaFinal } from '../../../../../components/Feedback/TelaFinal'
-import StartNow from '../../../../../components/Start/StartNow';
+import { Acertou } from '../../../../../../components/Feedback/Acertou'
+import { Errou } from '../../../../../../components/Feedback/Errou'
+import { TelaFinal } from '../../../../../../components/Feedback/TelaFinal'
+import './Dados.css'
+import { promptGames } from '../../../../../../services/PromptGames';
 
 function Dados() {
     const [symbols, setSymbols] = useState([])
@@ -16,15 +17,24 @@ function Dados() {
     const [gameFinished, setGameFinished] = useState(false)
     const [timeLeft, setTimeLeft] = useState(10)
     const symbolRef = useRef(null)
+    const estrutura = `"correspondence": [
+        {
+            "element": "element",
+            "answer": {
+                "name": "name"
+            }
+        }
+    ]`
 
     // Fazendo a requisição para a API
 // Função para buscar os elementos da API
 const fetchSymbols = async () => {
     try {
-      const result = await fetchTalkingGemini();
+      const prompt = promptGames('5', 'elementos da tabela períodica e seus respectivos nomes', estrutura)
+      const result = await fetchTalkingGemini(prompt);
       setSymbols(result);
     } catch (error) {
-      console.error('Erro ao buscar os elementos');
+      console.error('Erro ao buscar os elementos')
     }
   };
 
@@ -37,26 +47,26 @@ const fetchSymbols = async () => {
   useEffect(() => {
     if (timeLeft > 0 && !feedback) {
       const timer = setTimeout(() => {  //começando a contagem
-        setTimeLeft(timeLeft - 1);  //diminuindo 1 seg da timeLeft
+        setTimeLeft(timeLeft - 1)  //diminuindo 1 seg da timeLeft
       }, 1000);    //centésims
-      return () => clearTimeout(timer);
+      return () => clearTimeout(timer)
     } else if (timeLeft === 0) {
-      handleFeedback(false); // Feedback de erro se o tempo acabar
+      handleFeedback(false)// Feedback de erro se o tempo acabar
     }
-  }, [timeLeft, feedback]);
+  }, [timeLeft, feedback])
 
   // useEffect para animar o elemento atual
   useEffect(() => {
     if (symbolRef.current && !feedback) {  //elemento que está sendo implementado no HTML
-      gsap.fromTo(symbolRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
+      gsap.fromTo(symbolRef.current, { opacity: 0 }, { opacity: 1, duration: 1 })
     }
   }, [currentIndex, feedback]);  //lista de dependencias para que o useEffect se direcione de forma mais precisa
 
   // Função para exibir o feedback de acerto ou erro
   const handleFeedback = (isCorrect) => {
-    setFeedback(isCorrect ? 'acertou' : 'errou');
-    if (isCorrect) setScore(score + 1); // Aumenta o score se o usuário acertar
-  };
+    setFeedback(isCorrect ? 'acertou' : 'errou')
+    if (isCorrect) setScore(score + 1)// Aumenta o score se o usuário acertar
+  }
 
   // Função para passar para o próximo elemento
   const nextSymbol = () => {
@@ -65,9 +75,9 @@ const fetchSymbols = async () => {
     setTimeLeft(10); // Reinicia o temporizador
 
     if (currentIndex + 1 < symbols.length) {
-      setCurrentIndex(currentIndex + 1); // Passa para o próximo elemento
+      setCurrentIndex(currentIndex + 1) // Passa para o próximo elemento
     } else {
-      setGameFinished(true); // Se não houver mais elementos, o jogo termina
+      setGameFinished(true) // Se não houver mais elementos, o jogo termina
     }
   };
 
@@ -89,7 +99,7 @@ const fetchSymbols = async () => {
   }
 
     return (
-        <div className='container'>
+      <div className="telaDados">
             {/* Exibe o timer no topo da tela */}
             <div className="timer">
                 <p>Tempo Restante: <strong>{timeLeft}s</strong></p>
@@ -99,7 +109,7 @@ const fetchSymbols = async () => {
             {!feedback && symbols.length > 0 ? (
                 <div className="element-input-container">
                     <div ref={symbolRef} className='symbol'>
-                        <p className='element-symbol'>{symbols[currentIndex].symbol}</p>
+                        <p className='element-symbol'>{symbols[currentIndex].element}</p>
                     </div>
                     <div className="input-section">
                         {/* Adição do parágrafo explicativo */}
@@ -124,7 +134,7 @@ const fetchSymbols = async () => {
             {/* Exibir o componente de feedback */}
             {feedback === 'acertou' && <Acertou onAnimationComplete={nextSymbol} />}
             {feedback === 'errou' && <Errou onAnimationComplete={nextSymbol} />}
-        </div>
+      </div>
     )
 }
 

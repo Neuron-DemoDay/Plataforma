@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import './AulasImersivas.css'
-import DescRecent from '../../components/Buttons/ButtonMatérias/DescRecent';
-import Tema from '../../components/Buttons/ButtonTemas/Temas';
-import JogosDesc from '../../components/Buttons/ButtonJogos/JogosDesc';
+import '../../../../styles/Temas.css'
+import DescRecent from '../../../../components/Buttons/ButtonMatérias/DescRecent'
+import Tema from  '../../../../components/Buttons/ButtonTemas/Temas'
+import JogosDesc from '../../../../components/Buttons/ButtonJogos/JogosDesc'
 
 
-function AulasImersivas() {
+function Biologia() {
 
     return (
         <div className="aulas">
@@ -146,14 +145,14 @@ function AulasImersivas() {
                         <ul>
                             <li>
                             <JogosDesc 
-                                link={"/Aulas/Games/Quiz/"}
+                                link={'./containers/Aulas/Matérias/Biologia/Games/QuizBiologia'}
                                 name={"Quiz"}
                                 styleGame={'#FE5F55'}
                                 />
                             </li>
                             <li>
                             <JogosDesc 
-                                link={"/Aulas/Games/Quimica/"}
+                                link={'/Aulas/Biologia/Games/PalavrasBiologia'}
                                 name={"Ciclos Biológicos"}
                                 styleGame={'#FE5F55'}
                                 />
@@ -173,4 +172,4 @@ function AulasImersivas() {
     )
 }
 
-export default AulasImersivas;
+export default Biologia;
