@@ -5,7 +5,6 @@
     position: fixed;
     flex-direction: column;
     width: 10%;
-    position: fixed;
     margin: 0;
     height: 100vh;
     border-radius: 0px 50px 50px 0px;
@@ -36,12 +35,13 @@
     /* topo, direita, baixo, esquerda. */
 }
 
-.navbar-identidade .navbar-nome{
+.navbar-identidade .navbar-nome {
     display: none;
     font-size: 20px;
     font-weight: 600;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 .navbar-links a {
@@ -62,8 +62,7 @@
     font-size: 35px;
 }
 
-.icon>ul,
-li {
+.icon>ul>li {
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 3px;
@@ -81,11 +80,11 @@ li {
 
 .navbar:hover .navbar-identidade span {
     display: inline-block;
-} 
+}
 
 .navbar:hover .navbar-identidade .navbar-nome {
     display: inline-block;
-} 
+}
 
 
 /* Animações */
@@ -123,7 +122,7 @@ li {
 
 .navbar-links a.active::before {
     content: "";
-    position: absolute; 
+    position: absolute;
     width: 50px;
     left: -40px;
     top: 0;

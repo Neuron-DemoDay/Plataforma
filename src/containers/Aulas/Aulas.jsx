@@ -12,7 +12,7 @@ import { FaRegPenToSquare } from "react-icons/fa6";
 import Disciplina from '../../components/Buttons/ButtonDisciplina/Disciplina';
 
 
-function Aulas() {
+export default function Aulas() {
     return (
         <div className="tela">
             <div className="cienciasExatas">
@@ -103,5 +103,3 @@ function Aulas() {
         </div>
     )
 }
-
-export default Aulas

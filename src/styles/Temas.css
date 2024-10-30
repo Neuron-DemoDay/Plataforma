@@ -10,7 +10,7 @@
     padding: 10px;
     margin: 0;
     justify-content: center;
-    color: var(--room-color);
+    color: var(--third-color);
 }
 
 .blocos {
@@ -25,7 +25,8 @@
     /* Faz o scroll vertical aparecer */
     overflow-x: hidden;
     /* Oculta o scroll horizontal (opcional) */
-   
+    scrollbar-width: auto; /* Firefox */
+    scrollbar-color: var(--room-color) lightgrey;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -73,14 +74,15 @@
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.conteudoAtual ul,
+.conteudoAtual > ul,
 li {
     display: flex;
     width: 90%;
     height: 20%;
+    gap: 20px;
 }
 
-.conteudoAtual ul {
+.conteudoAtual > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +96,6 @@ li {
 .conteudoAtual>span {
     font-size: 3vh;
     font-weight: 600;
-
 }
 
 .temas {

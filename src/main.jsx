@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/Cronograma",
+        path: "/cronograma",
         element: <Cronograma />,
       },
       {
