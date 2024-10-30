@@ -25,17 +25,17 @@ function SideBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cronograma">
+            <NavLink to="/Cronograma">
               <i><MdViewTimeline className="icon" /></i><span>Cronograma</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aulas">
+            <NavLink to="./Aulas">
               <i><FaVideo className="icon" /></i> <span>Aulas</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/intercambios">
+            <NavLink to="/Intercambios">
               <i><PiPaperPlaneTiltFill className="icon" /></i> <span>Intercâmbios</span>
             </NavLink>
           </li>

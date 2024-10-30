@@ -55,15 +55,15 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/cronograma",
+        path: "/Cronograma",
         element: <Cronograma />,
       },
       {
-        path: "/aulas",
+        path: "/Aulas",
         element: <Aulas />,
       },
       {
-        path: "/intercambios",
+        path: "/Intercambios",
         element: <Intercambio />,
       },
       // QUIMICA
