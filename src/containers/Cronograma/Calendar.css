@@ -1,0 +1,115 @@
+/* src/components/Calendar.css */
+
+.calendar-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 76.75rem;
+  height: 55.625rem;
+  position: absolute;
+  overflow-y: auto; /* Permite rolagem vertical */
+  background-color: white;
+}
+
+.current-time-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px; /* Altura da linha */
+  background-color: red; /* Cor da linha */
+  top: calc(50%); /* Ajuste para a posição da hora atual */
+  transform: translateY(-50%); /* Centraliza a linha na hora atual */
+  z-index: 1; /* Garante que a linha fique acima dos outros elementos */
+}
+
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s;
+  background-color: transparent;
+}
+
+.category-item:hover {
+  opacity: 0.8;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.view-buttons button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+
+.view-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-container .fc .fc-now-indicator {
+  background-color: red;
+  height: 2px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.event-item {
+  border-radius: 0.3125rem;
+  border: 2px solid transparent; /* Inicialmente transparente */
+  padding: 4px 8px;
+  margin: 2px 0; /* Espaçamento entre eventos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(41, 204, 57, 0.05); /* Cor padrão do fundo */
+}
+
+.calendar-container .fc .fc-event {
+  background-color: transparent !important; /* Remove o fundo azul */
+  border: none !important; /* Remove a borda, se necessário */
+}
+
+.now-indicator {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Espessura da linha */
+  background-color: red; /* Cor da linha */
+  z-index: 10; /* Para ficar acima dos eventos */
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 100%; /* Ajusta a largura para dispositivos menores */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+}
