@@ -31,7 +31,7 @@ function SideBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aulas">
+            <NavLink to="/Materias">
               <i><FaVideo className="icon" /></i> <span>Aulas</span>
             </NavLink>
           </li>
@@ -39,9 +39,6 @@ function SideBar() {
             <NavLink to="/intercambios">
               <i><PiPaperPlaneTiltFill className="icon" /></i> <span>Intercâmbios</span>
             </NavLink>
-          </li>
-          <li>
-            {/* COLOCAR OUTLET AQUI */}
           </li>
 
         </ul>

@@ -144,7 +144,7 @@ function Ingles(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={'/Aulas/Ingles/Games/QuizIngles'}
+                            link={'/QuizIngles'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

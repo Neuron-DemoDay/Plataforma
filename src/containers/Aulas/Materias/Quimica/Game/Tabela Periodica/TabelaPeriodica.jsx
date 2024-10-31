@@ -1,7 +1,7 @@
 import Dados from './Dados';
 import './../../../../../../styles/Start.css'
 
-function Start() {
+export default function TabelaPeriodica() {
     return (
         <>
         <Dados/>
@@ -9,4 +9,4 @@ function Start() {
     )
 }
 
-export default Start;
+ 

@@ -6,13 +6,15 @@ import './index.css'
 import ErrorPage from "./error-page";
 import Dashboard from './containers/Dashboard/Dashboard'
 import Cronograma from './containers/Cronograma/Cronograma'
-import Aulas from './containers/Aulas/Aulas'
 import Intercambio from './containers/Intercâmbio/Intercambio'
+import Materias from './containers/Aulas/Materias';
 import SideBar from './components/SideBar/SideBar'
+
+import Aulas from './components/Buttons/ButtonAulas/AcessoAulas';
 
 import Quimica from './containers/Aulas/Materias/Quimica/Quimica'
 import QuimicaQuiz from './containers/Aulas/Materias/Quimica/Game/QuizQuimica/QuimicaQuiz'
-import Start from './containers/Aulas/Materias/Quimica/Game/Tabela Periodica/Start';
+import TabelaPeriodica from './containers/Aulas/Materias/Quimica/Game/Tabela Periodica/TabelaPeriodica';
 
 import Fisica from './containers/Aulas/Materias/Fisica/Fisica'
 import QuizFisica from './containers/Aulas/Materias/Fisica/Games/QuizFisica'
@@ -42,6 +44,7 @@ import QuizIngles from './containers/Aulas/Materias/Ingles/Games/QuizIngles'
 
 import Redacao from './containers/Aulas/Materias/Redacao/Redacao'
 import QuizRedacao from './containers/Aulas/Materias/Redacao/Games/QuizRedação'
+import QuizTranscricao from './components/Jogos/QuizTranscricao';
 
 
 const router = createBrowserRouter([
@@ -59,8 +62,12 @@ const router = createBrowserRouter([
         element: <Cronograma />,
       },
       {
-        path: "/Aulas",
-        element: <Aulas />,
+        path: "/Materias",
+        element: <Materias />,
+      },
+      {
+        path: "/QuizMateriaAtual",
+        element: <QuizTranscricao />,
       },
       {
         path: "/Intercambios",
@@ -68,104 +75,108 @@ const router = createBrowserRouter([
       },
       // QUIMICA
       {
-        path: '/Aulas/Materias/Quimica',
+        path: '/Quimica',
         element: <Quimica />,
       },
       {
-        path: "/Aulas/Quimica/Game/Dados",
-        element: <Start />,
+        path: "/TabelaPeriodica",
+        element: <TabelaPeriodica />,
       },
       {
-        path: "/Aulas/Quimica/Game/QuizQuimica",
+        path: "/QuizQuimica",
         element: <QuimicaQuiz />,
       },
       // FISICA
       {
-        path: "/Aulas/Materias/Fisica",
+        path: "/Fisica",
         element: <Fisica />,
       },
       {
-        path: "/Aulas/Fisica/Games/QuizFisica",
+        path: "/QuizFisica",
         element: <QuizFisica />,
       },
       // BIOLOGIA
       {
-        path: "/Aulas/Materias/Biologia",
+        path: "/Biologia",
         element: <Biologia />,
       },
       {
-        path: "/Aulas/Fisica/Games/QuizBiologia",
+        path: "/AcessoAulas/Biologia",
+        element: <Aulas/>
+      },
+      {
+        path: "/QuizBiologia",
         element: <QuizBiologia />,
       },
       {
-        path: "/Aulas/Biologia/Games/PalavrasBiologia",
+        path: "/PalavrasBiologia",
         element: <JogoDePalavras />,
       },
       // MATEMATICA
       {
-        path: "/Aulas/Materias/Matematica",
+        path: "/Matematica",
         element: <Matematica />,
       },
       {
-        path: "/Aulas/Matematica/Games/QuizMatematica",
+        path: "/QuizMatematica",
         element: <QuizMatematica />,
       },
       {
-        path: "/Aulas/Matematica/Games/Puzzle",
+        path: "/Puzzle",
         element: <Puzzle />,
       },
       // HISTORIA
       {
-        path: "/Aulas/Materias/Historia",
+        path: "//Historia",
         element: <Historia />,
       },
       {
-        path: "/Aulas/Historia/Games/QuizHistoria",
+        path: "/QuizHistoria",
         element: <QuizHistoria />,
       },
       // GEOGRAFIA
       {
-        path: "/Aulas/Materias/Geografia",
+        path: "/Geografia",
         element: <Geografia />,
       },
       {
-        path: "/Aulas/Geografia/Games/QuizGeografia",
+        path: "/QuizGeografia",
         element: <QuizGeografia />,
       },
       // FILOSOFIA
       {
-        path: "/Aulas/Materias/Filosofia",
+        path: "/Filosofia",
         element: <Filosofia />,
       },
       {
-        path: "/Aulas/Fisica/Games/QuizFilosofia",
+        path: "/QuizFilosofia",
         element: <QuizFilosofia />,
       },
       // PORTUGUES
       {
-        path: "/Aulas/Materias/Portugues",
+        path: "/Portugues",
         element: <Portugues />,
       },
       {
-        path: "/Aulas/Portugues/Games/QuizPortugues",
+        path: "/QuizPortugues",
         element: <QuizPortugues />,
       },
       // INGLES
       {
-        path: "/Aulas/Materias/Ingles",
+        path: "/Ingles",
         element: <Ingles />,
       },
       {
-        path: "/Aulas/Ingles/Games/QuizIngles",
+        path: "/QuizIngles",
         element: <QuizIngles />,
       },
       // REDACAO
       {
-        path: "/Aulas/Materias/Redacao",
+        path: "/Redacao",
         element: <Redacao />,
       },
       {
-        path: "/Aulas/Fisica/Games/QuizRedacao",
+        path: "/QuizRedacao",
         element: <QuizRedacao />,
       },
     ],

@@ -18,7 +18,7 @@ function Biologia() {
                      />
                     <div className="temas">
                         <Tema
-                        link=''
+                        link={"/AcessoAulas/Biologia"}
                         styleVerif='#29CC39'
                         tema="Introdução à Biologia"
                         color='#0F6DE7'
@@ -145,14 +145,14 @@ function Biologia() {
                         <ul>
                             <li>
                             <JogosDesc 
-                                link={'./containers/Aulas/Matérias/Biologia/Games/QuizBiologia'}
+                                link={'/QuizBiologia'}
                                 name={"Quiz"}
                                 styleGame={'#FE5F55'}
                                 />
                             </li>
                             <li>
                             <JogosDesc 
-                                link={'/Aulas/Biologia/Games/PalavrasBiologia'}
+                                link={'/PalavrasBiologia'}
                                 name={"Ciclos Biológicos"}
                                 styleGame={'#FE5F55'}
                                 />

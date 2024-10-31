@@ -144,7 +144,7 @@ function Fisica(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={'/Aulas/Fisica/Games/QuizFisica'}
+                            link={'/QuizFisica'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

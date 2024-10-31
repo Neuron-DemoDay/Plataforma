@@ -1,8 +1,8 @@
-import DadosQuiz from "../../../Games/Quiz/DadosQuiz";
+import Quiz from "../../../Games/Quiz/Quiz";
 
 function QuizFisica(){
     return(
-        <DadosQuiz 
+        <Quiz 
         tema={'da matéria de Física de nível básico'} 
         materia={'Física'} 
         />

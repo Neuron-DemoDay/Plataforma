@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Quiz.css'
-import { promptGames } from '../../../../services/PromptGames';
-import { fetchTalkingGemini } from '../../../../services/RequisiçãoAPI';
+import { promptGames } from '../../../../services/PromptGames.js';
+import { fetchTalkingGemini } from '../../../../services/RequisiçãoAPI.js';
 import { TelaFinal } from '../../../../components/Feedback/TelaFinal.jsx'
 
 function DadosQuiz({ tema, materia }) {

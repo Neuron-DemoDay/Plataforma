@@ -18,7 +18,7 @@ return(
                         <Tema
                         link=''
                         styleVerif='#29CC39'
-                        tema="Introdução à Biologia"
+                        tema="Introdução à Quimica"
                         color='#0F6DE7'
                         backgroundColor='rgba(15, 109, 231, 0.40)'
                         funcionalidade="Mapa Mental"
@@ -33,7 +33,7 @@ return(
                         <Tema
                         link=""
                         styleVerif='#29CC39'
-                        tema="Origem da Vida e do Universo"
+                        tema="?"
                         color='#FE5F55'
                         backgroundColor='rgba(254, 95, 85, 0.40)'
                         funcionalidade="Quiz"
@@ -47,7 +47,7 @@ return(
                         <Tema
                         link=""
                         styleVerif='#29CC39'
-                        tema="Citologia I: A Célula e suas Organelas"
+                        tema="?"
                         color='#FE5F55'
                         backgroundColor='rgba(254, 95, 85, 0.40)'
                         funcionalidade="Quiz"
@@ -61,7 +61,7 @@ return(
                         <Tema
                         link=""
                         styleVerif='#29CC39'
-                        tema="Vida e Diversidade Biológica"
+                        tema="?"
                         color='#FE5F55'
                         backgroundColor='rgba(254, 95, 85, 0.40)'
                         funcionalidade="Quiz"
@@ -75,7 +75,7 @@ return(
                         <Tema
                         link=""
                         styleVerif='#29CC39'
-                        tema="Ecologia I: Fluxos e Ciclos de Energia"
+                        tema="?"
                         color=''
                         backgroundColor=''
                         funcionalidade="Mapa Mental"
@@ -89,7 +89,7 @@ return(
                         <Tema
                         link=""
                         styleVerif='#29CC39'
-                        tema="Divisão Celular"
+                        tema="?"
                         color=''
                         backgroundColor=''
                         funcionalidade="Mapa Mental"
@@ -104,13 +104,13 @@ return(
                 </div>
                 <div className="laterais">
                     <div className="conteudoAtual">
-                        <span>Introdução à Biologia!</span>
+                        <span>Quimica</span>
                         <ul>
                             <li>
                                 <DescRecent
                                     link=""
                                     styleVerif='#29CC39'
-                                    tema="O início da Biologia"
+                                    tema="?"
                                     color=''
                                     backgroundColor=''
                                     funcionalidade="Mapa Mental"
@@ -120,7 +120,7 @@ return(
                                 <DescRecent
                                     link=""
                                     styleVerif='#29CC39'
-                                    tema="Introdução à Ecologia"
+                                    tema="?"
                                     color=''
                                     backgroundColor=''
                                     funcionalidade="Mapa Mental"
@@ -130,7 +130,7 @@ return(
                                 <DescRecent
                                     link=""
                                     styleVerif='#29CC39'
-                                    tema="Biodiversidade"
+                                    tema="?"
                                     color=''
                                     backgroundColor=''
                                     funcionalidade="Mapa Mental"
@@ -143,14 +143,14 @@ return(
                         <ul>
                             <li>
                             <JogosDesc 
-                                link={'/Aulas/Quimica/Game/QuizQuimica'}
+                                link={'/QuizQuimica'}
                                 name={"Quiz"}
                                 styleGame={'#FE5F55'}
                                 />
                             </li>
                             <li>
                             <JogosDesc 
-                                link={"/Aulas/Quimica/Game/Dados"}
+                                link={"/TabelaPeriodica"}
                                 name={"Tabela Periódica"}
                                 styleGame={'#FE5F55'}
                                 />
