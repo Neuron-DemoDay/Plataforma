@@ -144,7 +144,7 @@ function Historia(){
                     <ul>
                         <li>
                         <JogosDesc 
-                            link={'/Aulas/Historia/Games/QuizHistoria'}
+                            link={'/QuizHistoria'}
                             name={"Quiz"}
                             styleGame={'#FE5F55'}
                             />

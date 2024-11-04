@@ -73,15 +73,19 @@
     font-size: 35px;
 }
 
-.icon>ul>li {
+.icon>ul,
+.icon>li {
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 3px;
-    list-style: none;
-    text-decoration: none;
     row-gap: 20px;
     align-items: flex-start;
 }
+
+ul,li{
+    list-style: none;
+}
+
 
 .navbar-links span {
     display: none;

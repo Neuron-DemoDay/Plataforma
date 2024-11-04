@@ -1,4 +1,4 @@
-import DadosQuiz from "../../../Games/Quiz/DadosQuiz";
+import DadosQuiz from "../../../Games/Quiz/Quiz";
 
 function QuizRedacao(){
 return(

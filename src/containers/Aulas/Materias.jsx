@@ -12,7 +12,7 @@ import { FaRegPenToSquare } from "react-icons/fa6";
 import Disciplina from '../../components/Buttons/ButtonDisciplina/Disciplina';
 
 
-export default function Aulas() {
+export default function Materias() {
     return (
         <div className="tela">
             <div className="cienciasExatas">
@@ -20,28 +20,28 @@ export default function Aulas() {
                 <div className="materias">
                     <Disciplina
                         classe={"biologia"}
-                        link={'/Aulas/Materias/Biologia'}
+                        link={'/Biologia'}
                         styleComp={'#29CC39'}
                         icon={<LiaMicroscopeSolid />}
                         disciplina={'Biologia'}
                     />
                     <Disciplina
                         classe={"quimica"}
-                        link={'/Aulas/Materias/Quimica'}
+                        link={'/Quimica'}
                         styleComp={'#E9488C'}
                         icon={<GiChemicalDrop />}
                         disciplina={'Quimica'}
                     />
                     <Disciplina
                         classe={"fisica"}
-                        link={'/Aulas/Materias/Fisica'}
+                        link={'/Fisica'}
                         styleIcon={'#2EE6CA'}
                         icon={<GiAtom />}
                         disciplina={'Fisica'}
                     />
                     <Disciplina
                         classe={"matematica"}
-                        link={'/Aulas/Materias/Matematica'}
+                        link={'/Matematica'}
                         styleComp={'#FE5F55'}
                         icon={<TbMathSymbols />}
                         disciplina={'Matematica'}
@@ -53,21 +53,21 @@ export default function Aulas() {
                 <div className="materias">
                     <Disciplina
                         classe={"historia"}
-                        link={'/Aulas/Materias/Historia'}
+                        link={'/Historia'}
                         styleComp={'#B40FE7'}
                         icon={<BsHourglassSplit />}
                         disciplina={'Historia'}
                     />
                     <Disciplina
                         classe={"geografia"}
-                        link={'/Aulas/Materias/Geografia'}
+                        link={'Geografia'}
                         styleComp={'#33BFFF'}
                         icon={<BsGlobeAmericas />}
                         disciplina={'Geografia'}
                     />
                     <Disciplina
                         classe={"filosofia"}
-                        link={'/Aulas/Materias/Filosofia'}
+                        link={'Filosofia'}
                         styleComp={'#FFCB33'}
                         icon={<TfiThought />}
                         disciplina={'Filosofia'}
@@ -79,21 +79,21 @@ export default function Aulas() {
                 <div className="materias">
                     <Disciplina
                         classe={"portugues"}
-                        link={'/Aulas/Materias/Portugues'}
+                        link={'/Portugues'}
                         styleComp={'#CC7429'}
                         icon={<TbTextGrammar />}
                         disciplina={'Portugues'}
                     />
                     <Disciplina
                         classe={"ingles"}
-                        link={'/Aulas/Materias/Ingles'}
+                        link={'/Ingles'}
                         styleComp={'#0F6DE7'}
                         icon={<RiEnglishInput />}
                         disciplina={'Ingles'}
                     />
                     <Disciplina
                         classe={"redacao"}
-                        link={'/Aulas/Materias/Redacao'}
+                        link={'/Redacao'}
                         styleComp={'#FF00D0'}
                         icon={<FaRegPenToSquare />}
                         disciplina={'Redação'}
