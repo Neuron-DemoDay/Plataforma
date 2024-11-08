@@ -16,14 +16,14 @@ export const TelaFinal = ({ score, total, disciplina }) => {
                         <div className='approved'>
                             <h2>Parabéns! Você passou para o próximo jogo!</h2>
                             <div className="buttonTelaFinal">
-                                    <Link to="/aulas">Voltar às Aulas</Link>
+                                    <Link to="/Materias">Voltar às Aulas</Link>
                             </div>
                         </div>
                     ) : (
                         <div className='reproved'>
                             <h2>Não foi dessa vez, estude um pouco mais para tentarmos novamente!</h2>
                             <div className="buttonTelaFinal">
-                                    <Link to="/aulas" className='link-aulas'>{disciplina}</Link>
+                                    <Link to="/Materias" className='link-aulas'>{disciplina}</Link>
                             </div>
                         </div>
                     )}

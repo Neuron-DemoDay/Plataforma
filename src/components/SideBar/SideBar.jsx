@@ -1,12 +1,14 @@
 import logoBranca from '../../assets/logoBranca.png'
 import '../../styles/SideBar.css'
 import { NavLink } from "react-router-dom";
-import { GoHomeFill } from "react-icons/go";
-import { MdViewTimeline } from "react-icons/md";
-import { PiPaperPlaneTiltFill } from "react-icons/pi";
-import { FaVideo } from "react-icons/fa";
+import { TbHome } from "react-icons/tb";
+import { MdOutlineViewTimeline } from "react-icons/md";
+import { LiaPlaneDepartureSolid } from "react-icons/lia";
+import { MdOutlineClass } from "react-icons/md";
+import { IoGameControllerOutline } from "react-icons/io5";
 import User from "../User/User";
 import { Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 function SideBar() {
@@ -21,23 +23,28 @@ function SideBar() {
         <ul className="navbar-links">
           <li>
             <NavLink to="/">
-
-              <i><GoHomeFill className="icon" /> </i><span>Home</span>
+              <i><TbHome className="icon" /> </i><span>Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/cronograma">
-              <i><MdViewTimeline className="icon" /></i><span>Cronograma</span>
+              <i><MdOutlineViewTimeline className="icon" /></i><span>Cronograma</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/Materias">
-              <i><FaVideo className="icon" /></i> <span>Aulas</span>
+              <i><MdOutlineClass className="icon" /></i> <span>Aulas</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Games">
+              <i>
+                <IoGameControllerOutline className='icon' /></i><span>Jogos</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/intercambios">
-              <i><PiPaperPlaneTiltFill className="icon" /></i> <span>Intercâmbios</span>
+              <i><LiaPlaneDepartureSolid className="icon" /></i> <span>Intercâmbios</span>
             </NavLink>
           </li>
 

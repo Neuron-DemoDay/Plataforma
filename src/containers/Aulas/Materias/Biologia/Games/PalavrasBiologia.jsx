@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { fetchTalkingGemini } from "../../../../../services/RequisiçãoAPI";
 import { promptGames } from "../../../../../services/PromptGames";
-import { h1, p } from "framer-motion/client";
 import { TelaFinal } from "../../../../../components/Feedback/TelaFinal";
 import { Acertou } from "../../../../../components/Feedback/Acertou";
 import { Errou } from "../../../../../components/Feedback/Errou";
+import './PalavrasBiologia.css'
 
 function JogoDePalavras() {
     const [words, setWords] = useState([])
@@ -130,7 +130,7 @@ function JogoDePalavras() {
                                     </motion.button>
                                 ))}
                             </div>
-                            <button onClick={checkAnswer}>Verificar Resposta</button>
+                            <button className="verifBiologia" onClick={checkAnswer}>Verificar Resposta</button>
                         </div>
                     ) : null}
                 </>
