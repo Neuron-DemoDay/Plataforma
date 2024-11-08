@@ -80,6 +80,7 @@ const Calendar = forwardRef((props, ref) => {
   }, [filteredEvents]);
 
   return (
+    <div className="calendar">
     <div className="calendar-container">
       <div className="toolbar">
         <div className="categories-bar">
@@ -127,6 +128,7 @@ const Calendar = forwardRef((props, ref) => {
           );
         }}
       />
+    </div>
     </div>
   );
 });

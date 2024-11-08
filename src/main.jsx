@@ -6,15 +6,12 @@ import './index.css'
 import ErrorPage from "./error-page";
 import Dashboard from './containers/Dashboard/Dashboard'
 
-import Cronograma from './containers/Cronograma/Cronograma'
 import Calendar from './containers/Cronograma/Calendar'
-import Aulas from './containers/Aulas/Aulas'
+import Aulas from './containers/Aulas/Materias'
 
 import Intercambio from './containers/Intercâmbio/Intercambio'
 import Materias from './containers/Aulas/Materias';
 import SideBar from './components/SideBar/SideBar'
-
-import Aulas from './components/Buttons/ButtonAulas/AcessoAulas';
 
 import Quimica from './containers/Aulas/Materias/Quimica/Quimica'
 import QuimicaQuiz from './containers/Aulas/Materias/Quimica/Game/QuizQuimica/QuimicaQuiz'

@@ -1,22 +1,24 @@
 /* src/components/Calendar.css */
 
+.calendar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 20px;
+}
+
 .calendar-container {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   gap: 20px;
-  position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 76.75rem;
-  height: 55.625rem;
-  position: absolute;
-  overflow-y: auto; /* Permite rolagem vertical */
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
 
 .current-time-line {
-  position: absolute;
   left: 0;
   right: 0;
   height: 2px; /* Altura da linha */
@@ -78,7 +80,6 @@
 .calendar-container .fc .fc-now-indicator {
   background-color: red;
   height: 2px;
-  position: absolute;
   z-index: 10;
   width: 100%;
 }
@@ -98,7 +99,6 @@
 }
 
 .now-indicator {
-  position: absolute;
   left: 0;
   width: 100%;
   height: 2px; /* Espessura da linha */

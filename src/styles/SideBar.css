@@ -15,7 +15,7 @@
     display: flex;
     position: fixed;
     flex-direction: column;
-    width: 10%;
+    width: 7%;
     margin: 0;
     height: 100vh;
     border-radius: 0px 50px 50px 0px;
@@ -29,7 +29,11 @@
 .navbar-links {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
     gap: 6vh;
+    height: 75%;
+    width: 60%;
 }
 
 .navbar-identidade {
@@ -41,8 +45,8 @@
 }
 
 .navbar-identidade>img {
-    width: 60px;
-    margin: 20px 0 0;
+    width: 50px;
+    margin: 30px 0 0 0;
     /* topo, direita, baixo, esquerda. */
 }
 
@@ -55,37 +59,40 @@
     color: white;
 }
 
-.navbar-links a {
+.navbar-links>ul{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+
+.navbar-links >li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: translateX(-9px);
     color: #FFF;
     text-align: center;
     font-size: 15px;
     font-weight: 700;
-    position: relative;
-    display: flex;
-    align-items: center;
     margin-top: 3vh;
     gap: 8px;
     text-decoration: none;
 }
 
-.icon {
-    font-size: 35px;
+.link>span{
+    text-decoration: none;
 }
 
-.icon>ul,
-.icon>li {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0 0 3px;
-    row-gap: 20px;
-    align-items: flex-start;
+.icon {
+    font-size: 30px;
 }
+
+
 
 ul,li{
     list-style: none;
 }
-
 
 .navbar-links span {
     display: none;
@@ -105,18 +112,17 @@ ul,li{
 /* Animações */
 
 .navbar:hover {
-    width: 18%;
+    width: 15%;
 }
 
 .navbar-links a.active {
     color: #794FF1;
-    font-size: 15px;
     transform: translateX(-24px);
     width: 50%;
     height: 8vh;
-    padding-left: 15px;
+    padding: 0  15px 0 15px;
     border-radius: 20px;
-    background: rgba(217, 217, 217, 0.90);
+    background-color: rgba(217, 217, 217, 0.90);
     transition: width 0.3s ease-in-out;
 }
 
@@ -138,7 +144,7 @@ ul,li{
 .navbar-links a.active::before {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 55px;
     left: -40px;
     align-items: center;
     height: 45px;

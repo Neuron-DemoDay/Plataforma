@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 90vh;
 }
 
 .tela-final-container{
@@ -25,7 +25,8 @@
   align-items: center;
   justify-content: center;
   font-family: 'Chakra Petch', sans-serif;
-  width: 50%;
+  width: 60%;
+  height: 50vh;
   border: 2px groove var(--color-two);
   border-radius: 10px;
   text-align: center;
@@ -45,7 +46,7 @@
 
 .link-aulas {
   text-decoration: none;
-  color: #9448BC;
+  color: var(--color-four);
 }
 
 .reproved, .approved {
@@ -55,14 +56,22 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: #9448BC;
+  color: var(--color-two);
 }
 
 .buttonTelaFinal {
-border:3px solid #9448BC;
-width: 30%;
+border:3px solid var(--color-two);
+padding: 3px 7px 3px 7px;
+background-color: var(--color-two);
+color: var(--color-four);
 border-radius: 10px;
 font-size: 1.5rem;
 font-weight: 600;
 margin-bottom: 10px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.buttonTelaFinal:hover{
+  scale: 1.05;
 }

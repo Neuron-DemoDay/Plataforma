@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PuzzleContainers from "../../../../../components/Jogos/Puzzle";
+import PuzzleContainers from "../../../../../components/Buttons/ButtonJogos/Puzzle/Puzzle";
 import './PuzzleMatematica.css'
 import { promptGames } from "../../../../../services/PromptGames";
 import { fetchTalkingGemini } from "../../../../../services/RequisiçãoAPI";
@@ -63,7 +63,7 @@ function Puzzle() {
 
                 <>
                     <PuzzleContainers
-                        posicao={'1'}
+                        selected={'1'}
                         equacao={question[currentIndex]}
                         correct={'incorrect'}
                         disabled={userAnswer.trim() === ''}
@@ -72,7 +72,7 @@ function Puzzle() {
                         onClick={handleSubmit}
                     />
                     <PuzzleContainers
-                        posicao={'2'}
+                        selected={'2'}
                         equacao={'vao ficar aqui'}
                         correct={'incorrect'}
                         disabled={userAnswer.trim() === ''}
@@ -81,7 +81,7 @@ function Puzzle() {
                         onClick={handleSubmit}
                     />
                     <PuzzleContainers
-                        posicao={'3'}
+                        selected={'3'}
                         equacao={'vao ficar aqui'}
                         correct={'incorrect'}
                         disabled={userAnswer.trim() === ''}
@@ -90,7 +90,7 @@ function Puzzle() {
                         onClick={handleSubmit}
                     />
                     <PuzzleContainers
-                        posicao={'4'}
+                        selected={'4'}
                         equacao={'vao ficar aqui'}
                         correct={'incorrect'}
                         disabled={userAnswer.trim() === ''}
