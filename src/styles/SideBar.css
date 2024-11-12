@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.conte{
-    padding-left: 50px;
+.conte {
     padding-top: 3.5rem;
     transition: padding-left 0.3s ease;
 }
- 
-.navbar:hover ~ .conte {
-    padding-left: 250px;
-}
 
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
 
 .navbar {
     display: flex;
-    position: fixed;
     flex-direction: column;
-    width: 7%;
+    width: 90%;
     margin: 0;
     height: 100vh;
     border-radius: 0px 50px 50px 0px;
@@ -25,6 +24,23 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.mobile {
+    display: none;
+    font-size: 4vh;
+    margin-left: -5px;
+    height: 13vh;
+    width: 30%;
+    align-items: center;
+}
+
+.more-mobile {
+    background-color: var(--fifth-color);
+    border-radius: 0 10px 10px 0;
+    color: #FFF;
+    width: 100%;
+    height: 30%;
+    transition: 0.3s step-end;
+}
 
 .navbar-links {
     display: flex;
@@ -59,14 +75,14 @@
     color: white;
 }
 
-.navbar-links>ul{
+.navbar-links>ul {
     display: flex;
     justify-content: start;
     width: 100%;
 }
 
 
-.navbar-links >li > a {
+.navbar-links>li>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +96,7 @@
     text-decoration: none;
 }
 
-.link>span{
+.link>span {
     text-decoration: none;
 }
 
@@ -88,9 +104,8 @@
     font-size: 30px;
 }
 
-
-
-ul,li{
+ul,
+li {
     list-style: none;
 }
 
@@ -100,19 +115,38 @@ ul,li{
     margin: 0;
 }
 
-.navbar:hover .navbar-identidade span {
-    display: inline-block;
-}
-
-.navbar:hover .navbar-identidade .navbar-nome {
-    display: inline-block;
-}
-
 
 /* Animações */
 
-.navbar:hover {
-    width: 15%;
+.container-nav:hover~.conte {
+    padding-left: 20vh;
+}
+
+.container-nav:hover .navbar-identidade span {
+    display: inline-block;
+}
+
+.container-nav:hover .navbar-identidade .navbar-nome {
+    display: inline-block;
+}
+
+.container-nav:hover {
+    width: 20%;
+}
+
+.container-nav:hover .more-mobile{
+    transform: scaleX(-1);
+    border-radius: 10px 0 0 10px;
+    width: 70%;
+}
+
+.container-nav:hover .navbar-links a.active {
+    width: 100%;
+    height: 7.5vh;
+}
+
+.container-nav:hover .navbar-links span {
+    display: inline;
 }
 
 .navbar-links a.active {
@@ -120,7 +154,7 @@ ul,li{
     transform: translateX(-24px);
     width: 50%;
     height: 8vh;
-    padding: 0  15px 0 15px;
+    padding: 0 15px 0 15px;
     border-radius: 20px;
     background-color: rgba(217, 217, 217, 0.90);
     transition: width 0.3s ease-in-out;

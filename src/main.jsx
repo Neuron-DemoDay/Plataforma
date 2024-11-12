@@ -8,9 +8,10 @@ import Dashboard from './containers/Dashboard/Dashboard'
 
 import Calendar from './containers/Cronograma/Calendar'
 import Aulas from './containers/Aulas/Materias'
-
 import Intercambio from './containers/Intercâmbio/Intercambio'
-import Materias from './containers/Aulas/Materias';
+import Materias from './containers/Aulas/Materias'
+import Games from './containers/Games/Games'
+
 import SideBar from './components/SideBar/SideBar'
 
 import Quimica from './containers/Aulas/Materias/Quimica/Quimica'
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/Materias",
         element: <Materias />,
+      },
+      {
+        path: "/Games",
+        element: <Games />,
       },
       {
         path: "/QuizMateriaAtual",

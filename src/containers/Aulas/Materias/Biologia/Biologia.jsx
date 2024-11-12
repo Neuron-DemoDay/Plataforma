@@ -140,7 +140,7 @@ function Biologia() {
                             </li>
                         </ul>
                     </div>
-                    <div className="conteudoAtual gamesOption">
+                    <div className="gamesOption">
                         <span>Aprenda de forma Divertida!</span>
                         <ul>
                             <li>
