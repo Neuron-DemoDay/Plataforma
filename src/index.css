@@ -59,20 +59,23 @@ html, body, #root {
 }
 
 .conte /*content*/{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 20px;
-  margin-left: 20vh;
+  margin-left: 15vh;
   padding-top: 60px;
   transition: margin-left 0.3s ease;
-  width: 80%;
+  width: 85%;
   min-height: 90vh;
 }
 
-.side-Bar:hover + .conte{
-  margin-left: 25%;
+@media (max-width:992px){
+  .conte{
+    margin-left: 8vh;
+  }
 }
-
-
 
 @media (prefers-color-scheme: dark) {
 

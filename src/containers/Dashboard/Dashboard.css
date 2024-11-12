@@ -1,5 +1,6 @@
 .dashboard-grid {
     display: grid;
+    margin-left: 10vh;
     grid-template-columns: auto auto ; /* Colunas com tamanhos ajustáveis */
     grid-template-rows: auto auto auto; /* Linhas automáticas */
     grid-template-areas:
