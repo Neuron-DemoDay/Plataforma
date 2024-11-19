@@ -11,6 +11,7 @@ import Aulas from './containers/Aulas/Materias'
 import Intercambio from './containers/Intercâmbio/Intercambio'
 import Materias from './containers/Aulas/Materias'
 import Games from './containers/Games/Games'
+import Apps from './containers/Marketplace/Apps'
 
 import SideBar from './components/SideBar/SideBar'
 
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
       {
         path: "/Intercambios",
         element: <Intercambio />,
+      },
+      {
+        path: "/apps",
+        element: <Apps />,
       },
       // QUIMICA
       {
