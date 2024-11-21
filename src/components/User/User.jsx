@@ -7,7 +7,7 @@ import { MdExpandMore } from "react-icons/md";
 
 
 
-function User() {
+function User({toggleMenu, isMenuOpen}) {
     return (
         <div className="barraUser">
             <div className="user-func">
@@ -23,7 +23,8 @@ function User() {
                         <span id='nome'>Joilson Costa</span>
                         <span id='level'>Major 26</span>
                     </div>
-                    <div className="more-user">
+                    <div className="more-user" onClick={toggleMenu}>
+                        
                         <MdExpandMore />
                     </div>
                 </div>

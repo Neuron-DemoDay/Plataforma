@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+import React, { useState } from 'react';
 import './index.css'
 
 import ErrorPage from "./error-page";
@@ -48,11 +50,10 @@ import Redacao from './containers/Aulas/Materias/Redacao/Redacao'
 import QuizRedacao from './containers/Aulas/Materias/Redacao/Games/QuizRedação'
 import QuizTranscricao from './components/Jogos/QuizTranscricao';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SideBar />,
+    element: <SideBar/>,
     errorElement: <ErrorPage />,
     children: [
       {
