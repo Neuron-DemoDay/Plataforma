@@ -3,6 +3,7 @@ import './Apps.css';
 import spotifyVerde from "../../assets/spotify-logo-verde.png";
 import spotifyBranca from "../../assets/spotify-logo.png";
 import notion from "../../assets/notion-logo.png"
+import agenda from "../../assets/google-agenda-logo.png"
 // import paginaSpotify from "../../assets/pagina-spotify"
 
 // Componente Modal
@@ -68,7 +69,7 @@ function Apps() {
             id: 2,
             title: "Notion",
             content: "",
-            color: "#FFFFFF",
+            color: "#F5F5F5",
             modalContent: "O Notion é uma plataforma de organização e produtividade que combina notas, tarefas, banco de dados e calendários em um único aplicativo. Ele serve para criar e gerenciar anotações, projetos e informações de forma personalizada. Um benefício do Notion é a flexibilidade, permitindo que os usuários adaptem a ferramenta às suas necessidades, criando páginas e templates para organizar melhor seu trabalho e vida pessoal.",
             downloadLink: "https://www.notion.so/desktop",
             squareImage: notion,
@@ -78,11 +79,11 @@ function Apps() {
             id: 3,
             title: "Agenda",
             content: "",
-            color: "#90BE6D",
-            modalContent: "Este é o conteúdo detalhado do Card 3",
-            downloadLink: "https://example.com/download3",
-            squareImage: "https://via.placeholder.com/100",
-            modalImage: "https://via.placeholder.com/100"
+            color: "#F5F5F5",
+            modalContent: "O Google Agenda é um aplicativo de gerenciamento de calendários e compromissos desenvolvido pelo Google. Ele serve para organizar eventos, reuniões e lembretes, além de permitir o compartilhamento de agendas com outras pessoas. Um benefício do Google Agenda é a integração com outros serviços do Google, como Gmail e Google Meet, facilitando a marcação automática de compromissos e envio de convites, além de sincronizar as informações entre diferentes dispositivos.",
+            downloadLink: "https://workspace.google.com",
+            squareImage: agenda,
+            modalImage: agenda
         }
     ];
 

@@ -175,14 +175,10 @@
     height: 40px; /* Garante altura uniforme para o botão */
     font-size: 1.1rem;
     font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.modal-first-card .modal-footer button:hover {
-    background-color: #1DB954; /* Botões em verde */
+.modal-footer button:hover {
+    transform: scale(1.1);
 }
-
-.modal-second-card .modal-footer button:hover {
-    background-color: #626262;
-}
-
 
