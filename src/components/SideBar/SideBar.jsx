@@ -9,6 +9,7 @@ import { MdOutlineClass } from "react-icons/md";
 import { IoGameControllerOutline } from "react-icons/io5";
 import User from "../User/User";
 import { Outlet } from "react-router-dom";
+import { RiApps2AddLine } from "react-icons/ri";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import SvgIcon from './SvgIcon';
 
@@ -59,6 +60,12 @@ function SideBar() {
                 <NavLink to="/intercambios">
                   <i><LiaPlaneDepartureSolid className="icon" /></i>
                   <span>Intercâmbios</span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/Apps">
+                  <i><RiApps2AddLine className="icon" /></i>
+                  <span>Apps</span>
                 </NavLink>
               </li>
             </ul>
